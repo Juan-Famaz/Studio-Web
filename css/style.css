@@ -1,0 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+
+.nombre-citio span {
+    color: #E384FF;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
