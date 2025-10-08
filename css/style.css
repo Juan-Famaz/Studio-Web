@@ -3,6 +3,17 @@
     margin: 0;
 }
 
+@media (max-width: 430px) {
+    div {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
@@ -23,7 +34,6 @@ header div {
     justify-content: space-around;
     align-items: center;
     height: 100px;
-    gap: ;
 }
 
 header {
@@ -39,11 +49,8 @@ header {
 .navegacion-header a {
     color: azure;
     font-weight: 600;
-    border-bottom: 1px solid black;
 }
 
-.navegacion-header a:hover {
-   border-bottom: 1px solid white;
-}
+
 
 
