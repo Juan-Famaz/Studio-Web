@@ -1,9 +1,7 @@
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
-
-
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -20,43 +18,108 @@ a {
   color: black;
 }
 
+h2 {
+  text-align: center;
+  margin-top: 50px;
+}
+
 header div {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
 }
 
 header {
-    background-color: #000000;
-    height: 100px;
+  background-color: #000000;
+  height: 100px;
 }
 
 .navegacion-header {
-    display: flex;
-    gap: 50px;
+  display: flex;
+  gap: 50px;
 }
 
 .navegacion-header a {
-    color: azure;
-    font-weight: 600;
+  color: azure;
+  font-weight: 600;
+}
+
+.imagenbg {
+  background-image: url(../assets/inicio2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 320px;
+}
+
+.info-studio {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+}
+
+.info1 {
+  background-color: #865DFF;
+  color: white;
+  display: block;
+  padding: 5px 40px 0 40px;
+  border-radius: 5px;
+}
+
+.info1:hover {
+  background-color:#382083 ;
+}
+
+.info2 {
+  background-color: #0dd840;
+  color: white;
+  padding: 5px 40px 0 40px;
+  border-radius: 5px;
+}
+
+.info2:hover {
+  background-color: #19682d ;
+}
+
+.sobre-nosotros {
+  background-image: linear-gradient(
+      to right,
+      transparent 40%,
+      black 50%,
+      black 100%
+    ),
+    url(../assets/galeria_02.jpg);
+  background-position: left center;
+  padding: 100px 0;
+  margin-top: 100px;
+  background-repeat: no-repeat;
+  background-size: 100%, 1200px;
+}
+
+.sobre-nosotrosgrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 120px;
+}
+
+.text-nosotros {
+  grid-column: 2 / 3;
+  color: white;
 }
 
 @media (max-width: 430px) {
-    div {
-        flex-direction: column;
-    }
+  div {
+    flex-direction: column;
+  }
 
-    nav {
-        flex-direction: column;
-        text-align: center;
-    }
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    header {
-        height: 780px;
-    }
+  header {
+    height: 780px;
+  }
 }
-
-
-
-
